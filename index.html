@@ -27,8 +27,8 @@
             <section>
                 <ul>
                     <li v-for="(todo, index) in todoList" 
-                    :class="todo.done === 'true' ? 'active' : '' "
-                    @click="changeDone(todo.done)">
+                    @click="changeDone(todo.done)"
+                    :class="todo.done === 'true' ? 'active' : '' ">
                         {{ todo.text }} <i title="elimina" class="fa-solid fa-circle-xmark"
                             @click="removeTodo(index)"></i>
                     </li>

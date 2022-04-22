@@ -87,8 +87,11 @@ const app = new Vue({
             console.log('change done', todo_done)
             if(todo_done === 'false'){
                 todo_done = 'true';
+                console.log(todo_done);
             } else if (todo_done === 'true'){
                 todo_done = 'false';
+                console.log(todo_done);
+
             }
         }
 
