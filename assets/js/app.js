@@ -35,7 +35,7 @@ const app = new Vue({
         active: 0,
         todoList:[
             {
-                text: 'Fare Calistenic',
+                text: 'Fare Calisthenics',
                 done: 'true'
             },
 
@@ -70,8 +70,19 @@ const app = new Vue({
 
         addNewTask(){
             console.log('add task', this.addTask);
-            this.todoList.push(this.addTask);
-            this.addTask = '';
+            const myNewTask = {
+                text: this.addTask,
+                done: 'false'
+            }
+            if(this.addTask === ''){
+                alert('inserire qualcosa da fare!!')
+            } else {
+               
+                this.todoList.push(myNewTask);
+                this.addTask = '';
+            }
+           
+            
         }
 
     }

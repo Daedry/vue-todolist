@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    transition: 0.7s;
 }
 
 body{
@@ -22,9 +23,8 @@ body{
 
 h1{
     color: rgb(82, 25, 136);
-    text-shadow: 0 0 3px rgb(102, 228, 233), 0 0 5px #0000FF;
-    /* text-shadow: 2px 2px rgb(102, 228, 233); */
-
+    text-shadow: 0 0 5px rgb(102, 228, 233), 0 0 8px #0000FF;
+    font-size: 38px;
 }
 
 .new-task{
@@ -41,6 +41,7 @@ h1{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 30px;
     box-shadow: 0 0 5px #f6f6f6;
+
 }
 
 .new-task > button{
@@ -72,9 +73,31 @@ section{
     color: lavender;
     /* text-shadow: 1px 1px rgb(5, 107, 110); */
     box-shadow: 0 0 15px rgb(82, 25, 136);
+}
 
+section > ul{
+    position: relative;
+}
+
+section .fa-regular{
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+}
+
+section .fa-regular:hover{
+    color: rgb(218, 0, 0);
+    cursor: pointer;
+}
+
+section li{
+    padding: 0.5rem;
 }
 
 .active{
     text-decoration:2px line-through #000;
+}
+
+.active-bg{
+    background-color: rgb(102, 228, 233);
 }
