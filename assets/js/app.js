@@ -66,6 +66,7 @@ const app = new Vue({
         removeTodo(i){
             console.log('removeTodo', i);
             this.todoList.splice(i, 1);
+            
         },
 
         addNewTask(){
@@ -83,15 +84,12 @@ const app = new Vue({
             }
         },
 
-        changeDone(todo_done){
-            console.log('change done', todo_done)
-            if(todo_done === 'false'){
-                todo_done = 'true';
-                console.log(todo_done);
-            } else if (todo_done === 'true'){
-                todo_done = 'false';
-                console.log(todo_done);
-
+        changeDone(i){
+            console.log('change done', i)
+            if(this.todoList[i].done == 'false'){
+                this.todoList[i].done = 'true';
+            } else {
+                this.todoList[i].done = 'false';
             }
         }
 
