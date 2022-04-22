@@ -68,9 +68,13 @@ section{
     border-radius: 12px;
     font-weight: 600;
     font-size: 18px;
-    /* color: rgb(102, 228, 233); */
-    color: #010101;
-    text-shadow: 1px 1px rgb(5, 107, 110);
+    /* color: rgb(102, s228, 233); */
+    color: lavender;
+    /* text-shadow: 1px 1px rgb(5, 107, 110); */
     box-shadow: 0 0 15px rgb(82, 25, 136);
 
+}
+
+.active{
+    text-decoration:2px line-through #000;
 }

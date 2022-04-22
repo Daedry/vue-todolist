@@ -31,6 +31,8 @@ const app = new Vue({
     el: '#app',
 
     data: {
+        addTask: '',
+        active: 0,
         todoList:[
             {
                 text: 'Fare Calistenic',
@@ -61,6 +63,10 @@ const app = new Vue({
     },
 
     methods: {
+        removeTodo(i){
+            console.log('removeTodo', i);
+            this.todoList.splice(i, 1);
+        }
 
     }
 })
