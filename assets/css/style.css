@@ -84,6 +84,10 @@ h1 {
   background-color: rgb(102, 228, 233);
   border-color: rgb(82, 25, 136);
   color: rgb(121, 0, 235);
+  border-top-left-radius: 38px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 50%;
 }
 
 section {
@@ -95,6 +99,7 @@ section {
   font-size: 18px;
   color: lavender;
   box-shadow: 0 0 15px rgb(82, 25, 136);
+
 }
 
 section > ul {

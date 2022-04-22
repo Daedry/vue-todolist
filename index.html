@@ -24,7 +24,7 @@
                 <button @click="addNewTask">Add </button>
             </div>
 
-            <section>
+            <section v-if="todoList.length > 0">
                 <ul>
                     <li v-for="(todo, index) in todoList" 
                     @click="changeDone(index)"
@@ -33,6 +33,9 @@
                             @click="removeTodo(index)"></i>
                     </li>
                 </ul>
+            </section>
+            <section v-else="todoList.length === 0">
+                <p>Niente da fare per oggi. Esci e fai una passeggiata!</p>
             </section>
 
         </div>
