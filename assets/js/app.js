@@ -66,6 +66,12 @@ const app = new Vue({
         removeTodo(i){
             console.log('removeTodo', i);
             this.todoList.splice(i, 1);
+        },
+
+        addNewTask(){
+            console.log('add task', this.addTask);
+            this.todoList.push(this.addTask);
+            this.addTask = '';
         }
 
     }
