@@ -41,7 +41,7 @@ const app = new Vue({
 
             {
                 text: 'Ripassare JavaScript',
-                done: 'False'
+                done: 'false'
             },
 
             {
@@ -81,8 +81,15 @@ const app = new Vue({
                 this.todoList.push(myNewTask);
                 this.addTask = '';
             }
-           
-            
+        },
+
+        changeDone(todo_done){
+            console.log('change done', todo_done)
+            if(todo_done === 'false'){
+                todo_done = 'true';
+            } else if (todo_done === 'true'){
+                todo_done = 'false';
+            }
         }
 
     }

@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 body{
@@ -69,9 +69,7 @@ section{
     border-radius: 12px;
     font-weight: 600;
     font-size: 18px;
-    /* color: rgb(102, s228, 233); */
     color: lavender;
-    /* text-shadow: 1px 1px rgb(5, 107, 110); */
     box-shadow: 0 0 15px rgb(82, 25, 136);
 }
 
@@ -79,13 +77,13 @@ section > ul{
     position: relative;
 }
 
-section .fa-regular{
+section i{
     position: absolute;
     right: 0;
     margin-top: 4px;
 }
 
-section .fa-regular:hover{
+section i:hover{
     color: rgb(218, 0, 0);
     cursor: pointer;
 }

@@ -19,14 +19,18 @@
             <h1>My Todo List</h1>
 
             <div class="new-task">
-                <input type="text" v-model="addTask" :class="addTask != '' ? 'active-bg' : '' ">
+                <input type="text" v-model="addTask" @keyup.enter="addNewTask"
+                    :class="addTask != '' ? 'active-bg' : '' ">
                 <button @click="addNewTask">Add </button>
             </div>
 
             <section>
                 <ul>
-                    <li v-for="(todo, index) in todoList" :class="todo.done === 'true' ? 'active' : '' ">
-                        {{ todo.text }} <i title="elimina" class="fa-regular fa-circle-xmark" @click="removeTodo(index)"></i>
+                    <li v-for="(todo, index) in todoList" 
+                    :class="todo.done === 'true' ? 'active' : '' "
+                    @click="changeDone(todo.done)">
+                        {{ todo.text }} <i title="elimina" class="fa-solid fa-circle-xmark"
+                            @click="removeTodo(index)"></i>
                     </li>
                 </ul>
             </section>
